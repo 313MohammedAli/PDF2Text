@@ -69,6 +69,6 @@ def get_output_filename(file_path):
 # Use the file explorer to select an image file
 image_path = select_file()
 print("")
-output_file = get_output_filename(select_file())
-pdf_to_text(select_file(), output_file)
+output_file = get_output_filename(image_path)
+pdf_to_text(image_path, output_file)
 print(f"Text extracted and saved to {output_file}")
